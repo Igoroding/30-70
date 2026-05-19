@@ -707,7 +707,7 @@
       <div class="chips" aria-label="Ключевые статусы проекта">
         <span class="chip accent">MVP: бэнд Лёхи</span>
         <span class="chip green">Чек: 100 000 ₽</span>
-        <span class="chip">Канал: Telegram / MAX</span>
+        <span class="chip">Канал: Telegram</span>
       </div>
     </div>
 
@@ -742,8 +742,8 @@
           <span class="metric-label">готовность оплатить рабочий MVP</span>
         </div>
         <div class="metric">
-          <span class="metric-value">1</span>
-          <span class="metric-label">личный аккаунт руководителя</span>
+          <span class="metric-value">1000</span>
+          <span class="metric-label">контактов в базе Лёхи</span>
         </div>
       </div>
     </section>
@@ -756,27 +756,27 @@
           <div class="flow-step">
             <span class="flow-index">1</span>
             <p class="flow-title">Импорт базы</p>
-            <p class="flow-text">Event-агентства, история контакта, статус и источник.</p>
+            <p class="flow-text">Телефонные контакты, теги, агентства и частные заказчики.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">2</span>
             <p class="flow-title">Прогрев</p>
-            <p class="flow-text">ИИ выбирает повод и готовит аккуратное касание.</p>
+            <p class="flow-text">Непринужденное напоминание, видео с концерта, мягкий контакт.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">3</span>
             <p class="flow-title">Отправка</p>
-            <p class="flow-text">Сообщение уходит от личного аккаунта Лёхи с лимитами.</p>
+            <p class="flow-text">Лёха подтверждает вариант, сообщение уходит с личного Telegram.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">4</span>
             <p class="flow-title">CRM-лог</p>
-            <p class="flow-text">Все ответы, статусы и следующие шаги фиксируются.</p>
+            <p class="flow-text">Переписки, ответы, теги и следующий контакт фиксируются.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">5</span>
             <p class="flow-title">Передача</p>
-            <p class="flow-text">При интересе, бюджете или дате диалог уходит человеку.</p>
+            <p class="flow-text">Дата, цена, состав, райдер или интерес — сразу Лёхе.</p>
           </div>
         </div>
       </section>
@@ -788,10 +788,12 @@
           <div class="mvp-card">
             <h4>Что входит</h4>
             <ul>
-              <li>Мини-CRM: карточка агентства, статус, история переписки, следующий контакт.</li>
-              <li>AI-ответы и follow-up цепочки: тестирование, правки, сохранение удачных вариантов.</li>
-              <li>Лимиты отправки: дневной потолок, паузы, стоп-флаги, ручной перевод горячих лидов.</li>
-              <li>Интеграция с личным Telegram или MAX-аккаунтом руководителя коллектива.</li>
+              <li>Импорт из телефонных контактов: около 1000 записей, теги, агентства и частные заказчики.</li>
+              <li>Мини-CRM: карточка контакта, история переписки, статус, следующий контакт.</li>
+              <li>AI-напоминания: непринужденные касания, видео с концертов, мягкое общение без прямой продажи.</li>
+              <li>Песочница обучения: Лёха оценивает ответы агента, правит тон и сохраняет удачные варианты.</li>
+              <li>Лимиты отправки: не чаще раза в месяц на контакт, паузы, стоп-флаги, ручное подтверждение.</li>
+              <li>Интеграция с личным Telegram-аккаунтом руководителя коллектива.</li>
             </ul>
           </div>
           <div class="stack">
@@ -801,8 +803,31 @@
             </div>
             <div class="mvp-card">
               <h4>Критерий успеха</h4>
-              <p>Лёха получает горячие входящие из холодной базы и готов заплатить 100 000 ₽ за рабочий результат.</p>
+              <p>Лёха остается “на слуху” у менеджеров агентств и получает горячие вопросы по датам, цене, составу или райдеру.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card span-12">
+        <h3>Границы агента</h3>
+        <p class="section-note">Агент поддерживает контакт, но не заменяет Лёху в продажах и переговорах.</p>
+        <div class="principles">
+          <div class="principle">
+            <b>Не продает в лоб</b>
+            <span>Не давит, не закрывает сделку, не навязывает бэнд и не торгуется.</span>
+          </div>
+          <div class="principle">
+            <b>Не грубит</b>
+            <span>Без хамства, мата, оскорблений, пассивной агрессии и токсичного юмора.</span>
+          </div>
+          <div class="principle">
+            <b>Передает горячее</b>
+            <span>Дата, цена, состав, райдер, интерес к бэнду или заказу — сразу человеку.</span>
+          </div>
+          <div class="principle">
+            <b>Учится в песочнице</b>
+            <span>Спорные ответы сначала тестируются, а не уходят реальному клиенту.</span>
           </div>
         </div>
       </section>
@@ -836,19 +861,19 @@
         <div class="principles">
           <div class="principle">
             <b>Теневой режим</b>
-            <span>Сначала ИИ только советует и учится на реакциях.</span>
+            <span>В MVP ИИ предлагает варианты, а Лёха подтверждает отправку.</span>
           </div>
           <div class="principle">
             <b>Черновики</b>
-            <span>Важные сообщения уходят после подтверждения.</span>
+            <span>Каждый новый тип сообщения проходит через просмотр человеком.</span>
           </div>
           <div class="principle">
             <b>Стоп-флаги</b>
-            <span>Жалобы, скидки и личные темы передаются человеку.</span>
+            <span>Интерес, дата, цена, состав, райдер и возражения передаются Лёхе.</span>
           </div>
           <div class="principle">
-            <b>Холодная база отдельно</b>
-            <span>Основной аккаунт не превращается в канал рассылки.</span>
+            <b>Редкий контакт</b>
+            <span>Одному холодному контакту пишем не чаще одного раза в месяц.</span>
           </div>
         </div>
       </section>
@@ -858,13 +883,13 @@
         <div class="role-grid">
           <div class="role">
             <h4>Техника</h4>
-            <div class="task"><span class="check">1</span><span>Собрать ТЗ MVP под базу Лёхи.</span></div>
-            <div class="task"><span class="check">2</span><span>Выбрать безопасную интеграцию Telegram / MAX.</span></div>
+            <div class="task"><span class="check">1</span><span>Спроектировать импорт телефонных контактов и тегов.</span></div>
+            <div class="task"><span class="check">2</span><span>Выбрать безопасную интеграцию с личным Telegram.</span></div>
           </div>
           <div class="role">
             <h4>Данные</h4>
             <div class="task"><span class="check">3</span><span>Продумать хранение, обезличивание и удаление ПДн.</span></div>
-            <div class="task"><span class="check">4</span><span>Собрать CRM-лог, тест ответов ИИ и лимиты отправки.</span></div>
+            <div class="task"><span class="check">4</span><span>Собрать CRM-лог, песочницу обучения и лимиты отправки.</span></div>
           </div>
         </div>
       </section>
@@ -874,13 +899,13 @@
         <div class="role-grid">
           <div class="role">
             <h4>Материал</h4>
-            <div class="task"><span class="check">1</span><span>Передать холодную базу event-агентств.</span></div>
-            <div class="task"><span class="check">2</span><span>Выбрать первые 50-100 контактов для теста.</span></div>
+            <div class="task"><span class="check">1</span><span>Выгрузить телефонные контакты с тегами.</span></div>
+            <div class="task"><span class="check">2</span><span>Выбрать первые 50-100 контактов для мягкого прогрева.</span></div>
           </div>
           <div class="role">
             <h4>Метод</h4>
-            <div class="task"><span class="check">3</span><span>Дать примеры своего стиля общения и офферы бэнда.</span></div>
-            <div class="task"><span class="check">4</span><span>Определить, когда диалог сразу переводить на человека.</span></div>
+            <div class="task"><span class="check">3</span><span>Дать примеры живого общения и удачных напоминаний о себе.</span></div>
+            <div class="task"><span class="check">4</span><span>Настроить границы: без мата, хамства, оскорблений и прямой продажи.</span></div>
           </div>
         </div>
       </section>
@@ -890,22 +915,22 @@
         <div class="roadmap">
           <div class="road-item">
             <div class="road-time">Неделя 1</div>
-            <div class="road-main"><strong>База и сценарии</strong><span>Контакты Лёхи, оффер, сегменты, стоп-флаги.</span></div>
+            <div class="road-main"><strong>База и теги</strong><span>1000 контактов из телефона, сегменты, агентства и частники.</span></div>
             <div class="progress"><i style="width: 20%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Недели 2-3</div>
-            <div class="road-main"><strong>CRM и AI-ответы</strong><span>Карточки, история, генерация, тестирование ответов.</span></div>
+            <div class="road-main"><strong>CRM и песочница</strong><span>Карточки, история, обучение тона, правила запретов.</span></div>
             <div class="progress"><i style="width: 40%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Недели 4-6</div>
-            <div class="road-main"><strong>Безопасная отправка</strong><span>Лимиты, очереди, личный аккаунт, ручной перехват.</span></div>
+            <div class="road-main"><strong>Безопасная отправка</strong><span>Telegram, ручное подтверждение, лимит раз в месяц.</span></div>
             <div class="progress"><i style="width: 60%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Месяц 2</div>
-            <div class="road-main"><strong>Полевой запуск</strong><span>50-100 агентств, метрики ответов, доработка промптов.</span></div>
+            <div class="road-main"><strong>Полевой запуск</strong><span>50-100 контактов, видео-поводы, метрики ответов.</span></div>
             <div class="progress"><i style="width: 80%;"></i></div>
           </div>
           <div class="road-item">
@@ -921,8 +946,8 @@
         <div class="next-step">
           <span class="next-badge">01</span>
           <p>
-            Согласовать канал, импорт базы Лёхи и правила: кому пишем,
-            как часто, что считается горячим лидом и когда ИИ замолкает.
+            Выгрузить контакты Лёхи, сохранить теги и собрать 20-30 примеров
+            сообщений, на которых агент будет учиться его стилю.
           </p>
         </div>
       </section>
@@ -934,22 +959,22 @@
           <div class="risk">
             <span class="risk-level high">Критично</span>
             <h4>Персональные данные</h4>
-            <p>Переписки содержат телефоны, адреса, детали заказов и личные договоренности.</p>
+            <p>Контакты телефона и переписки содержат телефоны, имена, теги и детали заказов.</p>
           </div>
           <div class="risk">
             <span class="risk-level high">Критично</span>
             <h4>API и баны</h4>
-            <p>Нужны лимиты, паузы, естественный ритм и осторожность с личным аккаунтом.</p>
+            <p>Нужны паузы, лимит раз в месяц и ручное подтверждение с личного Telegram.</p>
           </div>
           <div class="risk">
             <span class="risk-level mid">Важно</span>
             <h4>Репутация</h4>
-            <p>Одна ошибка быстро разойдется по профессиональному комьюнити.</p>
+            <p>Тон должен быть дружелюбным: без хамства, мата, оскорблений и прямого давления.</p>
           </div>
           <div class="risk">
             <span class="risk-level mid">Важно</span>
             <h4>Онбординг</h4>
-            <p>Пользователя нужно вести за руку: чем меньше настроек, тем выше шанс запуска.</p>
+            <p>Лёхе нужна простая песочница: показал, поправил, агент запомнил правило.</p>
           </div>
         </div>
       </section>
