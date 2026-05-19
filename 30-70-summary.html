@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>30/70: краткое резюме проекта</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182027;
+      --muted: #5d6873;
+      --line: #d9e0e6;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --accent: #0f7b6c;
+      --accent-soft: #e4f4f1;
+      --risk: #b9483a;
+      --gold: #b27a24;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.58;
+    }
+
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 56px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 860px;
+      font-size: clamp(34px, 6vw, 64px);
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    section,
+    .note {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .span-7 {
+      grid-column: span 7;
+    }
+
+    .span-5 {
+      grid-column: span 5;
+    }
+
+    .span-6 {
+      grid-column: span 6;
+    }
+
+    .span-12 {
+      grid-column: span 12;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    strong {
+      color: var(--ink);
+    }
+
+    .tagline {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .risk-list strong {
+      color: var(--risk);
+    }
+
+    .next strong {
+      color: var(--gold);
+    }
+
+    .summary {
+      border-left: 5px solid var(--accent);
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    @media (max-width: 780px) {
+      main {
+        width: min(100% - 24px, 1040px);
+        padding-top: 28px;
+      }
+
+      .span-7,
+      .span-5,
+      .span-6,
+      .span-12 {
+        grid-column: span 12;
+      }
+
+      section,
+      .note {
+        padding: 18px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Краткое резюме идеи</p>
+      <h1>30/70: AI-продюсер для творческого предпринимателя</h1>
+      <p class="lead">
+        Проект для бенд-лидеров, музыкантов и ивент-специалистов, которые сами продают свои услуги,
+        ведут клиентов в мессенджерах и теряют заказы из-за хаоса, забытых касаний и отсутствия системы.
+      </p>
+      <span class="tagline">30% времени на деньги, 70% на творчество</span>
+    </header>
+
+    <div class="grid">
+      <section class="span-7 summary">
+        <h2>Суть продукта</h2>
+        <p>
+          Первый продукт: <strong>30/70: «Я — бэнд-лидер!»</strong>. Это AI-CRM и ассистент-продюсер,
+          который ведет клиентскую базу, напоминает о касаниях, готовит черновики сообщений в стиле
+          пользователя и считает упущенную выгоду.
+        </p>
+        <p>
+          Важный принцип: это не автономный ИИ-продавец, а <strong>второй пилот</strong>.
+          Он предлагает, пользователь подтверждает.
+        </p>
+      </section>
+
+      <section class="span-5">
+        <h2>Позиционирование</h2>
+        <p>
+          Продукт продается не как «еще одна CRM», а как способ вернуть творческому человеку право
+          быть художником.
+        </p>
+        <p>
+          Формула: <strong>«Ты — творить. Я — помнить, напоминать и формулировать. Ты только подтверждаешь».</strong>
+        </p>
+      </section>
+
+      <section class="span-6">
+        <h2>Целевая аудитория</h2>
+        <ul>
+          <li>бенд-лидеры, джазовые и кавер-оркестры;</li>
+          <li>ведущие, фотографы, диджеи, декораторы;</li>
+          <li>люди-бренды, у которых продажи завязаны на личную репутацию;</li>
+          <li>творческие фрилансеры с большой старой базой контактов.</li>
+        </ul>
+      </section>
+
+      <section class="span-6">
+        <h2>Что делает система</h2>
+        <ul>
+          <li>создает карточки клиентов и историю касаний;</li>
+          <li>напоминает, кому пора написать;</li>
+          <li>готовит черновики в стиле пользователя;</li>
+          <li>работает с холодной базой через отдельного бота;</li>
+          <li>показывает конверсию и упущенную выгоду в рублях.</li>
+        </ul>
+      </section>
+
+      <section class="span-12">
+        <h2>Продуктовая логика безопасности</h2>
+        <ul>
+          <li><strong>Теневой режим:</strong> первые недели ИИ ничего не отправляет, а только предлагает варианты.</li>
+          <li><strong>Черновики вместо автопилота:</strong> пользователь редактирует или подтверждает каждое важное сообщение.</li>
+          <li><strong>Три круга контактов:</strong> друзья — только напоминания; постоянные — черновики; холодные — сценарии через отдельного бота.</li>
+          <li><strong>Стоп-флаги:</strong> жалобы, скидки, личные вопросы и нестандартные ситуации сразу переводятся человеку.</li>
+        </ul>
+      </section>
+
+      <section class="span-6 next">
+        <h2>Рекомендуемый MVP</h2>
+        <ol>
+          <li><strong>Начать с Telegram</strong> как более гибкой и понятной точки входа.</li>
+          <li>Сделать ручной MVP на себе и 3-7 бета-тестерах.</li>
+          <li>Собрать простую CRM: контакты, статусы, история, черновики.</li>
+          <li>Добавить «Аудитор базы»: упущенная выгода и список клиентов, которым пора написать.</li>
+          <li>Первые продажи делать через личный онбординг, а не через триал с картой.</li>
+        </ol>
+      </section>
+
+      <section class="span-6">
+        <h2>Маркетинг и запуск</h2>
+        <p>
+          Самая сильная стратегия — публичный дневник: как бенд-лидер внедряет ИИ в собственную работу,
+          возвращает клиентов, показывает цифры, ошибки, страхи и результаты.
+        </p>
+        <p>
+          Главный актив проекта — не код, а доверие, личность основателя, реальные кейсы и ощущение
+          «это сделал свой человек для своих».
+        </p>
+      </section>
+
+      <section class="span-6">
+        <h2>Монетизация</h2>
+        <ul>
+          <li>подписка: ориентир 3000-5000 ₽/мес.;</li>
+          <li>ручной онбординг и сопровождение первых клиентов;</li>
+          <li>мини-курс или методология по продажам для творческих;</li>
+          <li>расширение на «Я — ведущий!» и «Я — фотограф!».</li>
+        </ul>
+      </section>
+
+      <section class="span-6 risk-list">
+        <h2>Главные риски</h2>
+        <ul>
+          <li><strong>Персональные данные:</strong> переписки могут содержать телефоны, адреса и детали заказов.</li>
+          <li><strong>Неофициальные API:</strong> риск блокировок аккаунтов и компрометации данных.</li>
+          <li><strong>Репутация:</strong> одна утечка или заблокированный аккаунт могут убить доверие.</li>
+          <li><strong>Онбординг:</strong> аудитория может быть рассеянной и технически неуверенной.</li>
+        </ul>
+      </section>
+
+      <section class="span-12">
+        <h2>Что делать первым</h2>
+        <p>
+          Не строить сразу большой продукт. Сначала нужен безопасный прототип: Telegram, ручной онбординг,
+          теневой режим, аудит клиентской базы, черновики сообщений и строгая работа с персональными данными.
+          Юридический контур по ПДн лучше отдельно проверить с профильным юристом до запуска на внешних клиентах.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      Итог: идея выглядит жизнеспособной, если делать ее как доверительный инструмент для «своих»,
+      а не как бездушную CRM. Сильная формула: AI-продюсер, который бережет стиль, отношения и репутацию.
+    </footer>
+  </main>
+</body>
+</html>
