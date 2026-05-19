@@ -521,6 +521,44 @@
       gap: 10px;
     }
 
+    .mvp-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 12px;
+    }
+
+    .mvp-card {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(30,41,59,0.08);
+    }
+
+    .mvp-card h4 {
+      margin: 0 0 8px;
+      font-size: 14px;
+    }
+
+    .mvp-card p,
+    .mvp-card li {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    .mvp-card p {
+      margin: 0;
+    }
+
+    .mvp-card ul {
+      margin: 0;
+      padding-left: 17px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 10px;
+    }
+
     .principle {
       padding: 13px;
       border-radius: 16px;
@@ -631,6 +669,7 @@
       .score-panel,
       .role-grid,
       .principles,
+      .mvp-grid,
       .flow,
       .risk-grid {
         grid-template-columns: 1fr;
@@ -661,14 +700,14 @@
         <p class="eyebrow">One-pager проекта</p>
         <h1>30/70: Я — бэнд-лидер!</h1>
         <p>
-          AI-ассистент для бенд-лидеров и творческих предпринимателей:
-          помнит клиентов, готовит черновики, напоминает о касаниях и возвращает заказы из старой базы.
+          AI-система, которая от имени руководителя коллектива системно общается с холодной базой,
+          прогревает event-агентства и передает человеку горячие запросы на заказ шоу.
         </p>
       </div>
       <div class="chips" aria-label="Ключевые статусы проекта">
-        <span class="chip accent">MVP: Telegram</span>
-        <span class="chip green">Фокус: 3-7 тестеров</span>
-        <span class="chip">Формат: второй пилот</span>
+        <span class="chip accent">MVP: бэнд Лёхи</span>
+        <span class="chip green">Чек: 100 000 ₽</span>
+        <span class="chip">Канал: Telegram / MAX</span>
       </div>
     </div>
 
@@ -676,8 +715,9 @@
       <div class="hero-copy">
         <h2>Не CRM для музыканта, а операционная память бенд-лидера</h2>
         <p>
-          Творческий человек часто сам себе артист, продюсер, администратор и отдел продаж.
-          30/70 берет на себя память, рутину и формулировки, но не забирает у человека голос и контроль.
+          У многих музыкантов есть холодные базы event-агентств, но нет привычки регулярно
+          и аккуратно о себе напоминать. 30/70 берет на себя ритм касаний, память и формулировки,
+          но горячие сделки оставляет человеку.
         </p>
         <div class="formula" aria-label="Формула 30/70">
           <div class="formula-box">
@@ -695,48 +735,74 @@
       <div class="score-panel" aria-label="Ключевые метрики идеи">
         <div class="metric big">
           <span class="metric-value">1</span>
-          <span class="metric-label">первый продукт: «Я — бэнд-лидер!»</span>
+          <span class="metric-label">первый клиент: джаз-бэнд Лёхи</span>
         </div>
         <div class="metric">
-          <span class="metric-value">3</span>
-          <span class="metric-label">круга контактов</span>
+          <span class="metric-value">100k</span>
+          <span class="metric-label">готовность оплатить рабочий MVP</span>
         </div>
         <div class="metric">
-          <span class="metric-value">0</span>
-          <span class="metric-label">автоотправок на старте</span>
+          <span class="metric-value">1</span>
+          <span class="metric-label">личный аккаунт руководителя</span>
         </div>
       </div>
     </section>
 
     <div class="grid">
       <section class="card span-12">
-        <h3>Как работает продукт</h3>
-        <p class="section-note">От старой переписки к понятному действию, которое человек подтверждает сам.</p>
+        <h3>Как работает MVP</h3>
+        <p class="section-note">От холодной базы event-агентств к горячему запросу, который забирает Лёха.</p>
         <div class="flow">
           <div class="flow-step">
             <span class="flow-index">1</span>
-            <p class="flow-title">База</p>
-            <p class="flow-text">Контакты, переписки, прошлые заказы и забытые клиенты.</p>
+            <p class="flow-title">Импорт базы</p>
+            <p class="flow-text">Event-агентства, история контакта, статус и источник.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">2</span>
-            <p class="flow-title">Анализ</p>
-            <p class="flow-text">Кто теплый, кто холодный, кому пора написать.</p>
+            <p class="flow-title">Прогрев</p>
+            <p class="flow-text">ИИ выбирает повод и готовит аккуратное касание.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">3</span>
-            <p class="flow-title">Черновик</p>
-            <p class="flow-text">ИИ предлагает текст в стиле пользователя.</p>
+            <p class="flow-title">Отправка</p>
+            <p class="flow-text">Сообщение уходит от личного аккаунта Лёхи с лимитами.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">4</span>
-            <p class="flow-title">Контроль</p>
-            <p class="flow-text">Пользователь правит, подтверждает или забирает диалог.</p>
+            <p class="flow-title">CRM-лог</p>
+            <p class="flow-text">Все ответы, статусы и следующие шаги фиксируются.</p>
           </div>
           <div class="flow-step">
             <span class="flow-index">5</span>
-            <p class="flow-title">Заказ</p>
-            <p class="flow-text">Повторные продажи, статистика, понятная выгода.</p>
+            <p class="flow-title">Передача</p>
+            <p class="flow-text">При интересе, бюджете или дате диалог уходит человеку.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card span-12">
+        <h3>MVP для Лёхи</h3>
+        <p class="section-note">Одна рабочая инсталляция под джаз-бэнд, без публичной подписки и маркетплейса.</p>
+        <div class="mvp-grid">
+          <div class="mvp-card">
+            <h4>Что входит</h4>
+            <ul>
+              <li>Мини-CRM: карточка агентства, статус, история переписки, следующий контакт.</li>
+              <li>AI-ответы и follow-up цепочки: тестирование, правки, сохранение удачных вариантов.</li>
+              <li>Лимиты отправки: дневной потолок, паузы, стоп-флаги, ручной перевод горячих лидов.</li>
+              <li>Интеграция с личным Telegram или MAX-аккаунтом руководителя коллектива.</li>
+            </ul>
+          </div>
+          <div class="stack">
+            <div class="mvp-card">
+              <h4>Что не делаем в первой версии</h4>
+              <p>Оплату подписки, мультиаккаунты, витрину для всех музыкантов и полную автоматизацию без контроля.</p>
+            </div>
+            <div class="mvp-card">
+              <h4>Критерий успеха</h4>
+              <p>Лёха получает горячие входящие из холодной базы и готов заплатить 100 000 ₽ за рабочий результат.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -792,13 +858,13 @@
         <div class="role-grid">
           <div class="role">
             <h4>Техника</h4>
-            <div class="task"><span class="check">1</span><span>Собрать короткое ТЗ MVP.</span></div>
-            <div class="task"><span class="check">2</span><span>Выбрать стартовую архитектуру Telegram.</span></div>
+            <div class="task"><span class="check">1</span><span>Собрать ТЗ MVP под базу Лёхи.</span></div>
+            <div class="task"><span class="check">2</span><span>Выбрать безопасную интеграцию Telegram / MAX.</span></div>
           </div>
           <div class="role">
             <h4>Данные</h4>
             <div class="task"><span class="check">3</span><span>Продумать хранение, обезличивание и удаление ПДн.</span></div>
-            <div class="task"><span class="check">4</span><span>Собрать механику черновиков и напоминаний.</span></div>
+            <div class="task"><span class="check">4</span><span>Собрать CRM-лог, тест ответов ИИ и лимиты отправки.</span></div>
           </div>
         </div>
       </section>
@@ -808,13 +874,13 @@
         <div class="role-grid">
           <div class="role">
             <h4>Материал</h4>
-            <div class="task"><span class="check">1</span><span>Собрать типы клиентов, диалогов и возражений.</span></div>
-            <div class="task"><span class="check">2</span><span>Выбрать 20-30 контактов для безопасного теста.</span></div>
+            <div class="task"><span class="check">1</span><span>Передать холодную базу event-агентств.</span></div>
+            <div class="task"><span class="check">2</span><span>Выбрать первые 50-100 контактов для теста.</span></div>
           </div>
           <div class="role">
             <h4>Метод</h4>
-            <div class="task"><span class="check">3</span><span>Вести дневник эксперимента и фиксировать цифры.</span></div>
-            <div class="task"><span class="check">4</span><span>Отметить зоны, где ИИ не должен говорить сам.</span></div>
+            <div class="task"><span class="check">3</span><span>Дать примеры своего стиля общения и офферы бэнда.</span></div>
+            <div class="task"><span class="check">4</span><span>Определить, когда диалог сразу переводить на человека.</span></div>
           </div>
         </div>
       </section>
@@ -824,27 +890,27 @@
         <div class="roadmap">
           <div class="road-item">
             <div class="road-time">Неделя 1</div>
-            <div class="road-main"><strong>Концепт и рамки</strong><span>Роли, риски, MVP, первые сценарии.</span></div>
+            <div class="road-main"><strong>База и сценарии</strong><span>Контакты Лёхи, оффер, сегменты, стоп-флаги.</span></div>
             <div class="progress"><i style="width: 20%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Недели 2-3</div>
-            <div class="road-main"><strong>Ручной прототип</strong><span>База, напоминания, черновики, ручной контроль.</span></div>
+            <div class="road-main"><strong>CRM и AI-ответы</strong><span>Карточки, история, генерация, тестирование ответов.</span></div>
             <div class="progress"><i style="width: 40%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Недели 4-6</div>
-            <div class="road-main"><strong>Теневой тест</strong><span>Проверка на себе и 3-7 тестерах.</span></div>
+            <div class="road-main"><strong>Безопасная отправка</strong><span>Лимиты, очереди, личный аккаунт, ручной перехват.</span></div>
             <div class="progress"><i style="width: 60%;"></i></div>
           </div>
           <div class="road-item">
             <div class="road-time">Месяц 2</div>
-            <div class="road-main"><strong>Простой интерфейс</strong><span>Аудитор базы, карточки, первые кейсы.</span></div>
+            <div class="road-main"><strong>Полевой запуск</strong><span>50-100 агентств, метрики ответов, доработка промптов.</span></div>
             <div class="progress"><i style="width: 80%;"></i></div>
           </div>
           <div class="road-item">
-            <div class="road-time">Месяц 3</div>
-            <div class="road-main"><strong>Первые продажи</strong><span>10-15 платящих через личный онбординг.</span></div>
+            <div class="road-time">После MVP</div>
+            <div class="road-main"><strong>Публичная подписка</strong><span>Мультиклиентность, тарифы, онбординг других бэндов.</span></div>
             <div class="progress"><i style="width: 100%;"></i></div>
           </div>
         </div>
@@ -855,8 +921,8 @@
         <div class="next-step">
           <span class="next-badge">01</span>
           <p>
-            Сделать безопасный Telegram-тест: ручная база, черновики,
-            напоминания и 3-7 тестеров без автоотправки.
+            Согласовать канал, импорт базы Лёхи и правила: кому пишем,
+            как часто, что считается горячим лидом и когда ИИ замолкает.
           </p>
         </div>
       </section>
@@ -873,7 +939,7 @@
           <div class="risk">
             <span class="risk-level high">Критично</span>
             <h4>API и баны</h4>
-            <p>Неофициальные интеграции могут привести к блокировке основного аккаунта.</p>
+            <p>Нужны лимиты, паузы, естественный ритм и осторожность с личным аккаунтом.</p>
           </div>
           <div class="risk">
             <span class="risk-level mid">Важно</span>
